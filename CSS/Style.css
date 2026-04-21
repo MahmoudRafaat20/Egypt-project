@@ -1,0 +1,722 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.fa-house {
+    color: wheat;
+}
+
+/* Header section*/
+.header {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(13,27, 42);
+    position: fixed;
+    z-index: 10;
+}
+
+.header-logo {
+    margin-top: 5px;
+    margin-left: 15px;
+    float: left;
+}
+.header-logo img{
+    border-radius: 20px;
+}
+
+.header-search {
+    float: left;
+    margin-top: 25px;
+    position: relative;
+}
+
+.header-search i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.header-search input {
+    width: 250px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.list {
+    float: right;
+    margin-right: 25px;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.list li {
+    list-style: none;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.list li:hover {
+    color: rgb(95, 86, 86);
+}
+
+.list li::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: rgb(114, 110, 18);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.list li:hover::after {
+    width: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.header-photo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.dropdown-list {
+
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    width: 80px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.dropdown-list p {
+    padding: 4px 0px;
+
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+    transition: 5s;
+}
+
+/*home section*/
+.home {
+    width: 100%;
+    height: 100vh;
+   background-image: url(../Images/Egypt\ Travel\ Pro.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    position: relative;
+}
+
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-content {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-paragraph {
+    color: grey;
+}
+
+.home-button {
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.home-button:hover {
+    opacity: 0.4;
+}
+.btn-2{
+    background-color: rgb(24, 54, 137);
+    color: white;
+}
+/*welcome section*/
+.welcome {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+
+.welcome-header {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    background-color: rgb(179, 171, 171);
+    margin: 20px auto;
+}
+
+.welcome-item {
+    width: 32%;
+    height: 250px;
+    border: 1px solid rgb(101, 42, 42);
+    border-radius: 8px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 10px;
+    position: relative;
+
+}
+
+.second-item {
+    margin: 0px 15px;
+}
+
+.welcome-item h2 {
+    margin: 10px 0px;
+}
+
+.welcome-item p {
+    padding: 10px 0px;
+}
+
+.welcome-item a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.welcome-item::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(45, 36, 11);
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.welcome-item:hover p {
+    color: rgb(138, 138, 138);
+}
+
+.welcome-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.7s;
+}
+.welcome-item:hover h2{
+  color: grey;
+}
+/* featured-places section */
+.featured-places {
+    background-color: rgb(4, 2, 42);
+    height: 100vh;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+.featured-places h2 {
+    font-size: 30px;
+}
+.featured-item {
+    position: relative;
+    width: 25%;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.featured-item h2 {
+    margin: 10px 0px;
+}
+
+.featured-item img {
+    width: 100%;
+    height: 300px;
+}
+
+.featured-item i {
+    color: rgb(91, 86, 95);
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 6px;
+}
+
+.featured-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.featured-item:hover .featured-overlay {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.featured-content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.second-item {
+    margin: 0px 15px;
+}
+
+/* offers section */
+.offers {
+    width: 85%;
+    height: 550px;
+    margin: auto;
+}
+.offers-head {
+    text-align: center;
+    font-size: 40px;
+    
+}
+.offers-item {
+    width: 30%;
+    height: 180px;
+border: 1px solid rgb(101, 42, 42);
+    padding: 20px 10px;
+    display: inline-block;
+    margin: 10px 10px;
+    border-radius: 15px;
+    position: relative;
+    
+}
+.offers-item i {
+    float: left;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+.offers-item p{
+    padding: 10px 40px;
+    color: gray;
+}
+.offers-item:hover p {
+    color: black;
+}
+.offers-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(16, 29, 29, 0.5);
+    border-radius: 15px;
+}
+.offers-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.7s;
+}
+/*visit section*/
+.visit {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+.visit-line {
+    width: 80px;
+    height: 4px;
+    background-color: black;
+    margin: 10px 0;
+}
+.visit-image ul{
+    margin: 0px 120px;
+}
+.visit-dot ,.dot-1{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(218, 215, 221);
+    margin:4px 2px ;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 5px;
+}
+.dot-1{
+    background-color: rgb(91, 86, 95);
+}
+ 
+.visit-dot:hover{
+    background-color: rgb(54, 51, 57);
+}
+.visit-item{
+    width: 58%;
+    height: 400px;
+    float: left;
+    margin: 10px 10px;
+   
+}
+.visit i{
+    font-size: 30px;
+    color: rgb(91, 86, 95);
+    padding: 0px 10px;
+}
+.visit-image{
+    width: 40%;
+    height: 400px;
+float: left;
+padding-left: 100px;
+
+}
+.visit-item ul li {
+    list-style: none;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.visit-paragraph {
+    color: gray;
+    padding: 10px 0px;
+}
+/* stats section */
+.stats {
+    width: 100%;
+    height: 400px;
+   
+    text-align: center;
+    padding-top: 20px;
+    background-image: url(../Images/Sunset\ on\ the\ Nile\ River\ –\ Egypt\ Travel\ Inspiration.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.stats-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+.stats-item {
+    width: 25%;
+    
+  float: left;
+    color: white;
+   margin-top: 150px;
+}
+.stats-item h2 {
+    font-size: 40px;
+}
+.stats-item i{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+/*pricing section*/
+.pricing {
+    width: 80%;
+    height: 520px;
+    margin: auto;
+}
+.pricing-header {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.pricing-item{
+    width: 30%;
+    height: 75%;
+    border: 1px solid rgb(101, 42, 42);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    position: relative;
+    text-align: center;
+}
+.pricing-item h2 {
+    margin: 35px 0px;
+}
+.price{
+    font-size: 30px;
+     font-weight: bold;
+     border: 1px solid rgb(101, 42, 42);
+    display: inline;
+    border-radius:80px ;
+    padding: 10px 10px;
+}
+.price-content{
+    margin-top: 25px;
+}
+.price-content p{
+    color: gray;
+    padding: 10px 0px;
+}
+.pricing button{
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border-color: rgb(113, 38, 108);
+    margin-top: 15px;
+}
+.pricing-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+  
+    background-color: rgba(16, 29, 29, 0.5);
+    border-radius: 15px;
+}
+.pricing-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.7s;
+}
+/*characters section*/
+.characters{
+    width: 100%;
+    height: 350px;
+    background-image: url(../Images/Valley\ of\ the\ Kings.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.characters-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.character-item{
+    width: 40%;
+    height:60%;
+    color: white;
+    display: inline-block;
+    margin:100px 60px;
+}
+.character-item  h2{
+    margin: 15px 35px;
+    padding: 0px 70px;
+}
+.character-item  .profession{
+    color: rgba(205, 153, 24, 0.518);
+}
+.character-item img{
+    float: left;
+    border-radius: 50%;
+}
+.character-item .paragraph{
+    margin-top: 50px;
+}
+/*team-section*/
+.team{
+    width: 80%;
+    height: 450px;
+    margin:auto ;
+   text-align: center;
+   margin-top: 15px;
+}
+.team-item{
+    float: left;
+    width: 30%;
+    background-color: gray;
+    padding: 10px 20px;
+   position: relative;
+   border-radius: 10px;
+}
+.team-item::after{
+position: absolute;
+content: "";
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+.team-item:hover::after{
+    height: 100%;
+    transition: 0.4s;
+}
+.item-image{
+    position: relative;
+}
+.item-image img{
+width: 100%;
+}
+.item-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.team-item:hover .item-overlay{
+    visibility: visible;
+    transition: 0.2s;
+}
+.team-item:hover p{
+    color: rgb(11, 10, 10);
+}
+.team-item:hover h2{
+    color: rgb(216, 202, 202);
+}
+.item-2{
+    margin: 0% 5%;
+}
+.item-overlay a{
+    display: block;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(44, 83, 130);
+   font-size: 20px;
+   margin-left: auto;
+   cursor: pointer;
+}
+.item-overlay a i{
+    line-height: 40px;
+}
+.item-info{
+    margin-top: 10px;
+}
+.item-info p{
+    padding: 10px 0px;
+    color: beige;
+}
+/*news-section*/
+.news{
+    width: 80%;
+    margin: auto;
+    height: 600px;
+   text-align: center;
+}
+.news-item{
+    width: 30%; 
+    text-align: center;
+    border: 1px solid rgb(213, 201, 25);
+    height: 500px;
+    display: inline-block;
+    border-radius: 15px;
+    position: relative;
+}
+.news-item::before{
+position: absolute;
+content: "";
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+background-color: rgba(78, 90, 24, 0.5);
+border-radius: 10px;
+}
+
+.news-item:hover::before{
+    height: 100%;
+    transition: 2s;
+}
+.item2{
+    margin: 0px 3%;
+}
+.news-item a{
+    text-decoration: none;
+}
+.news-item h2{
+    margin-top: 10px;
+}
+
+.news-item p{
+    margin: 10px;
+}
+.news-item ul li i{
+    color: rgb(83, 82, 25);
+    background: none;
+}
+.news-item img{
+   margin: 10px 0px;
+   border-radius: 15px;
+}
+.news-item ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 5px;
+}
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(81, 57, 5, 0.677);
+}
+.footer-content{
+   width: 20%;
+   padding-top: 5px;
+   margin: auto;
+}
+.footer-content  img{
+    margin-left: 65px;
+}
+ 
+.footer-content i{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-right: 3px;
+    color: brown;
+    width: 43px;
+    height: 43px;
+   padding: 5px 4px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+.footer-content i:hover{
+    opacity: 0.3;
+}
+.footer-content  p{
+    margin-top: 10px;
+}
