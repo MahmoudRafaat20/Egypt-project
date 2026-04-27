@@ -706,12 +706,12 @@ border-radius: 10px;
     font-size: 32px;
     margin-top: 10px;
     margin-right: 3px;
-    color: brown;
+    color: white;
     width: 43px;
     height: 43px;
    padding: 5px 4px;
     border-radius: 20px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(22, 51, 82);
     text-align: center;
 }
 .footer-content i:hover{
